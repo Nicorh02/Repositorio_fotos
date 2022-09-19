@@ -1,0 +1,43 @@
+#tarjetero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: rgb(60, 80, 255);
+}
+
+.tarjetas{
+    width: 30%;
+    height: auto;
+    border: 5px solid black;
+    background-color: #ff5e5e80;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+
+.foto {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+@media (max-width: 630px) {
+    .tarjetas {
+      width: 90%;
+      height: auto;
+    }
+  
+    #tarjetero {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    header {
+      flex-direction: column;
+      height: 200px;
+    }
+  }
